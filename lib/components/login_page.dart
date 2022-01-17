@@ -1,4 +1,3 @@
-
 import 'package:flutter/material.dart';
 import 'package:looking_for_me/components/end_part.dart';
 import 'package:looking_for_me/components/top_part.dart';
@@ -7,7 +6,6 @@ import 'package:looking_for_me/login_auth/login_auth.dart';
 import 'package:provider/provider.dart';
 
 import 'center_part.dart';
-
 
 class LoginPage extends StatefulWidget {
   const LoginPage({Key? key}) : super(key: key);
@@ -30,17 +28,14 @@ class _LoginPageState extends State<LoginPage> {
         elevation: 0,
       ),
       body: Container(
-        decoration: BoxDecoration(
-        //   image: DecorationImage(
-        //       image: AssetImage('assets/register.png'), fit: BoxFit.cover),
-         ),
+        decoration: const BoxDecoration(),
         child: Padding(
           padding: const EdgeInsets.symmetric(horizontal: 15),
           child: Column(
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: [
               // top part/
-              TopPart(),
+              const TopPart(),
               // center part
               CenterPart(
                 email: email,

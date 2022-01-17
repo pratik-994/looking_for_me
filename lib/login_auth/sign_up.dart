@@ -4,8 +4,7 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:looking_for_me/components/login_page.dart';
-import 'package:looking_for_me/screens/home_screen.dart';
-
+import 'package:looking_for_me/home/home_screen.dart';
 
 class SignupAuthProvider with ChangeNotifier {
   static Pattern pattern =
@@ -20,7 +19,7 @@ class SignupAuthProvider with ChangeNotifier {
       {required TextEditingController? fullName,
       required TextEditingController? emailAdress,
       required TextEditingController? password,
-     // required TextEditingController? address,
+      // required TextEditingController? address,
 
       required BuildContext context}) async {
     if (fullName!.text.trim().isEmpty) {
@@ -83,10 +82,10 @@ class SignupAuthProvider with ChangeNotifier {
         ).then((value) {
           loading = false;
           notifyListeners();
-           Navigator.push(
-            context, MaterialPageRoute(builder: (context) => HomePage()));
-        Navigator.push(
-            context, MaterialPageRoute(builder: (context) => LoginPage()));
+          Navigator.push(
+              context, MaterialPageRoute(builder: (context) => HomeScreen()));
+          Navigator.push(
+              context, MaterialPageRoute(builder: (context) => LoginPage()));
           // );
         });
       } on FirebaseAuthException catch (e) {

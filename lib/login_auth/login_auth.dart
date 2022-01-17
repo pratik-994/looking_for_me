@@ -1,10 +1,8 @@
 // ignore_for_file: prefer_const_constructors
 
-
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
-import 'package:looking_for_me/screens/home_screen.dart';
-
+import 'package:looking_for_me/home/home_screen.dart';
 
 class LoginAuthProvider with ChangeNotifier {
   static Pattern pattern =
@@ -62,8 +60,7 @@ class LoginAuthProvider with ChangeNotifier {
             loading = false;
             notifyListeners();
             await Navigator.push(
-            context, MaterialPageRoute(builder: (context) => HomePage()));
-            
+                context, MaterialPageRoute(builder: (context) => HomeScreen()));
           },
         );
         notifyListeners();
