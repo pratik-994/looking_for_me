@@ -39,6 +39,7 @@ class _MyButtonState extends State<MyButton> {
           borderRadius: BorderRadius.circular(04),
         ),
         child: Container(
+          color: Colors.cyan,
           height: 50,
           alignment: Alignment.center,
           child: Text(

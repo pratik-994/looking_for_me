@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:looking_for_me/components/end_part.dart';
 import 'package:looking_for_me/components/top_part.dart';
 import 'package:looking_for_me/login_auth/login_auth.dart';
+import 'package:looking_for_me/Widget/bezierContainer.dart';
 
 import 'package:provider/provider.dart';
 

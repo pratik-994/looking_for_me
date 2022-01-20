@@ -21,14 +21,22 @@ class TopPart extends StatelessWidget {
               //   scale: 8,
               // ),
             ),
+            Text(
+              "Looking For Me",
+              style: TextStyle(
+                color: Colors.cyan,
+                fontSize: 30,
+                fontWeight: FontWeight.bold,
+              ),
+            ),
             SizedBox(
-              height: 7,
+              height: 50,
             ),
             Text(
               "Login",
               style: TextStyle(
                 color: AppColors.KblackColor,
-                fontSize: 20,
+                fontSize: 15,
                 fontWeight: FontWeight.bold,
               ),
             )

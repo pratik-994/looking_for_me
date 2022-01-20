@@ -118,7 +118,7 @@ class SecondPart extends StatelessWidget {
                   // //  navigateTo: CartPage(),
                   // );
                 },
-                text: "Add to Cart",
+                text: "Hire",
               ),
             ],
           ),
