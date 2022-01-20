@@ -4,10 +4,17 @@ import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:looking_for_me/components/login_page.dart';
 import 'package:looking_for_me/home/home_screen.dart';
+
 import 'package:looking_for_me/login_auth/login_auth.dart';
+
 import 'package:looking_for_me/login_auth/sign_up.dart';
 
+
+import 'package:looking_for_me/login_auth/welcome_page.dart';
+
 import 'package:looking_for_me/providers/product_provider.dart';
+import 'package:looking_for_me/worker_login/login/components/login_auth_provider.dart';
+import 'package:looking_for_me/worker_login/login/signup/components/signup_auth_provider.dart';
 
 import 'package:provider/provider.dart';
 
@@ -30,6 +37,12 @@ class MyApp extends StatelessWidget {
         ChangeNotifierProvider(
           create: (context) => LoginAuthProvider(),
         ),
+         ChangeNotifierProvider(
+          create: (context) => SignupAuthProvider2(),
+        ),
+        ChangeNotifierProvider(
+          create: (context) => LoginAuthProvider2(),
+        ),
         ChangeNotifierProvider(
           create: (context) => ProductProvider(),
         ),
@@ -49,9 +62,9 @@ class MyApp extends StatelessWidget {
           stream: FirebaseAuth.instance.authStateChanges(),
           builder: (context, userSnp) {
             if (userSnp.hasData) {
-              return LoginPage();
+           //   return LoginPage();
             }
-            return LoginPage();
+            return welcomePage();
           },
         ),
         // home: SignupPage(),

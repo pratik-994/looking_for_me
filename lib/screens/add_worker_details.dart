@@ -8,6 +8,7 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/services.dart';
 import 'package:image_picker/image_picker.dart';
 import 'package:looking_for_me/database/product.dart';
+import 'package:looking_for_me/login_auth/welcome_page.dart';
 
 
 
@@ -145,7 +146,7 @@ class _AddWorkerDetailsState extends State<AddWorkerDetails> {
                         Checkbox(
                             value: selectedSizes.contains('Janitor'),
                             onChanged: (value) => changeSelectedSize('Janitor')),
-                        Text('JanitorL'),
+                        Text('Janitor'),
                         Checkbox(
                             value: selectedSizes.contains('Carpenter'),
                             onChanged: (value) => changeSelectedSize('Carpenter')),
@@ -193,18 +194,32 @@ class _AddWorkerDetailsState extends State<AddWorkerDetails> {
                         ),
                         validator: (value) {
                           if (value!.isEmpty) {
-                            return 'phoneNumber';
+                            return 'Phone Number';
                           }
                         },
                       ),
                     ),
 
-                    FlatButton(
+                    Padding(
+                      padding: const EdgeInsets.all(10.0),
+                      child: FlatButton(
+                        color: red,
+                        textColor: white,
+                        child: Text('add Details'),
+                        onPressed: () {
+                          validateAndUpload();
+                        },
+                      ),
+                    ),
+                      FlatButton(
                       color: red,
                       textColor: white,
-                      child: Text('add Details'),
+                      child: Text('log out'),
                       onPressed: () {
-                        validateAndUpload();
+                           Navigator.of(context).push(
+              MaterialPageRoute(
+                builder: (context) => welcomePage())
+                           );
                       },
                     )
                   ],
