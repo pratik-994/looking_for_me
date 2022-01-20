@@ -294,7 +294,7 @@ class _AddWorkerDetailsState extends State<AddWorkerDetails> {
               "job": selectedSizes,
             
               "picture": imageUrl1,
-              "phoneNo": phoneController.text,
+              "Phone no.": phoneController.text,
               
              
             });

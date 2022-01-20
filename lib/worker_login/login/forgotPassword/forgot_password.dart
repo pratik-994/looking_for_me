@@ -20,7 +20,7 @@ class _ForgotPasswordState2 extends State<ForgotPassword2> {
       appBar: AppBar(
         backgroundColor: Colors.transparent,
         elevation: 0.0,
-        title: Text("Forgot Password"),
+        title: Text(""),
       ),
       body: Padding(
         padding: const EdgeInsets.all(8.0),

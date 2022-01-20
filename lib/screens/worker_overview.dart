@@ -146,7 +146,7 @@ class _ProductOverviewState extends State<ProductOverview> {
         appBar: AppBar(
           iconTheme: IconThemeData(color: textColor),
           title: Text(
-            "worker Details",
+            "Worker Detail",
             style: TextStyle(color: textColor),
           ),
         ),
@@ -206,7 +206,7 @@ class _ProductOverviewState extends State<ProductOverview> {
                                 ),
                               ],
                             ),
-                            Text("phoneNo  ${widget.productPrice}"),
+                            Text("Phone no  ${widget.productPrice}"),
                             Text("location ${widget.location}"),
 
                             // Count(

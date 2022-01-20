@@ -42,7 +42,7 @@ class CenterPart2 extends StatelessWidget {
                 );
               },
               child: Text(
-                "Forgot Password?",
+                "",
                 style: TextStyle(
                   color: Colors.blue,
                 ),
