@@ -27,7 +27,7 @@ class _HomeScreenState extends State<HomeScreen> {
           child: Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
-              Text('Today"s Food'),
+              Text('Workers available'),
               // Text(
               //   'view all',
               //   style: TextStyle(color: Colors.grey),
@@ -164,7 +164,7 @@ class _HomeScreenState extends State<HomeScreen> {
                   image: DecorationImage(
                     fit: BoxFit.cover,
                     image: NetworkImage(
-                        'https://images.unsplash.com/photo-1499028344343-cd173ffc68a9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8MTh8fHxlbnwwfHx8fA%3D%3D&w=1000&q=80'),
+                        'https://d2zqka2on07yqq.cloudfront.net/wp-content/uploads/2020/06/Law-Risk-Management-_-Cover-1-1536x751-1.png'),
                   ),
                   color: Colors.red,
                   borderRadius: BorderRadius.circular(10)),
@@ -195,16 +195,16 @@ class _HomeScreenState extends State<HomeScreen> {
                             'easily hire',
                             style: TextStyle(
                               fontSize: 30,
-                              color: Colors.green[100],
+                              color: Colors.cyan,
                               fontWeight: FontWeight.bold,
                             ),
                           ),
                           Padding(
                             padding: const EdgeInsets.only(left: 15),
                             child: Text(
-                              'worker in your nerby area',
+                              'Workers in your nearby area',
                               style: TextStyle(
-                                color: scaffoldBackgroundColor,
+                                color: Colors.white,
                               ),
                             ),
                           )

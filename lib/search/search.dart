@@ -42,7 +42,7 @@ class _SearchState extends State<Search> {
       body: ListView(
         children: [
           ListTile(
-            title: Text("Items"),
+            title: Text("Search"),
           ),
           Container(
             color: Colors.white,
@@ -61,7 +61,7 @@ class _SearchState extends State<Search> {
                 ),
                 fillColor: Color(0xffc2c2c2),
                 filled: true,
-                hintText: "Search for items in the store",
+                hintText: "Search for available workers",
                 suffixIcon: Icon(Icons.search),
               ),
             ),
